@@ -1,0 +1,243 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>nodejs | Gridea</title>
+<link rel="shortcut icon" href="https://https://github.com/zx1337/Gridea.github.io.git/favicon.ico?v=1658400642192">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://https://github.com/zx1337/Gridea.github.io.git/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="nodejs | Gridea - Atom Feed" href="https://https://github.com/zx1337/Gridea.github.io.git/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="npm，即 Node Package Manager，是管理项目用到的js库（js文件）
+nodejs中包含了npm，需要安装nodejs，并且配置环境
+VUE框架，前后端分离
+前台代码和后台代码在一个项目中，它们被部署在同一个服务器中。（..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://https://github.com/zx1337/Gridea.github.io.git">
+  <img class="avatar" src="https://https://github.com/zx1337/Gridea.github.io.git/images/avatar.png?v=1658400642192" alt="">
+  </a>
+  <h1 class="site-title">
+    Gridea
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              nodejs
+            </h2>
+            <div class="post-info">
+              <span>
+                2022-07-21
+              </span>
+              <span>
+                3 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>npm，即 Node Package Manager，是管理项目用到的js库（js文件）<br>
+nodejs中包含了npm，需要安装nodejs，并且配置环境<br>
+VUE框架，前后端分离<br>
+前台代码和后台代码在一个项目中，它们被部署在同一个服务器中。（Servlet+JSP)<br>
+前台代码在前台服务器中，后台代码在后台服务器，两个项目<br>
+效率高，解耦合<br>
+VUE这个框架简化了JS的操作，把JS封装成一个VM对象（试图＋数据模型）</p>
+<ul>
+<li>
+<p>百度nodejs</p>
+</li>
+<li>
+<p>http://nodejs.cn/ 官网</p>
+</li>
+<li>
+<p>下载长期支持版</p>
+</li>
+<li>
+<p>解压安装</p>
+</li>
+<li>
+<p>配置环境变量<br>
+右键我的电脑属性或run:sysdm.cpl<br>
+增加:D:\nodejs\node_global保存下载的程序包路径<br>
+增加:D:\nodejs<br>
+cmd：node -v 和 npm -v 命令验证版本信息，确定安全完成</p>
+</li>
+<li>
+<p>D:\nodejs目录下新建目录node_cache 和 node_global</p>
+<p>cmd:npm config set prefix &quot;D:\nodejs\node_global&quot;<br>
+npm config set cache &quot;D:\nodejs\node_cache&quot;</p>
+</li>
+<li>
+<p>npm WARN<br>
+显示npm WARN config global --global, --local are deprecated. Use --location=global instead.<br>
+修改npm文件:prefix -g 为 prefix --location=global<br>
+修改npm.cmd、npx、npx.cmd 文件同上</p>
+</li>
+<li>
+<p>镜像站点<br>
+cmd:npm config set registry http://registry.npm.taobao.org(安装package容易报错)<br>
+原始镜像：cmd:npm config set registry http://registry.npmjs.org(这个安装package不容易报错)</p>
+</li>
+<li>
+<p>查看配置信息<br>
+cmd:npm config list 关注用户目录下.npmrc文件</p>
+</li>
+<li>
+<p>安装VUE<br>
+npm install vue -g 其中 install可以简写为i,-g是下载到global目录，执行命令并查看<br>
+D:\nodejs\node_global\node_modules\vue</p>
+</li>
+<li>
+<p>安装路由模块<br>
+cmd:npm install vue-router -g</p>
+</li>
+<li>
+<p>安装脚手架<br>
+建工程用的模板<br>
+npm install vue-cli -g<br>
+vue-cli内置两个工具，webpack和webpack-simple,前者专业，后者简单</p>
+</li>
+<li>
+<p>构建项目<br>
+需要先选择你要放置代码的位置如：</p>
+<p>其中，cd的意思就是 change directory 意为切换目录，往上退一层则为 cd ..，cd / 为退到根目录 ；dir的意思是directory表示 目录或者管理的意思；命令行创建文件夹和删除文件夹的命令分别是mkdir+文件夹名，rmdir+文件夹名；删除指定目录则使用 rmdir /s +文件夹名</p>
+<p>vue init webpack-simple vue01，表示创建该项目项目名称为vue01<br>
+显示中文乱码问题chcp 65001（本机没有显示中文乱码）</p>
+<p>CMD快速定位文件夹<br>
+地址栏点击选中，输入cmd回车（创建项目后会有 To get started提示三步走），如图</p>
+<p>cd v1 选择v1文件夹<br>
+npm install 安装依赖</p>
+<p>npm run dev 运行</p>
+<p>最后结束弹出网页（以工程化创建vue大致就是这样）</p>
+</li>
+</ul>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://https://github.com/zx1337/Gridea.github.io.git/post/hello-gridea/">
+              <h3 class="post-title">
+                Hello Gridea
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://https://github.com/zx1337/Gridea.github.io.git/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
